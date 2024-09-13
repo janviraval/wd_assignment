@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="canvas" width="110" height="150">
+        Sorry, your browser does not support canvas.
+    </canvas>
+
+
+
+
+    <canvas id="myCanvas" width="200" height="100">
+        Sorry, your browser does not support canvas.
+    </canvas>
+
+
+
+
+
+    <canvas id="mycanvas" width="200" height="150" style="border:1px solid black">
+        Sorry, your browser does not support canvas.
+    </canvas>
+
+
+
+
+</body>
+<script>
+    const canvas = document.getElementById("canvas");
+    const ct = canvas.getContext("2d");
+
+    ct.fillStyle = "red";
+    ct.fillRect(10, 10, 150, 100);
+</script>
+<script>
+    const can = document.getElementById("myCanvas");
+    const c = can.getContext("2d");
+
+    c.beginPath();
+    c.arc(95, 50, 40, 0, 2 * Math.PI);
+    c.fillStyle = "red";
+    c.fill();
+    c.lineWidth = 0;
+    c.strokeStyle = "none";
+    c.stroke();
+</script>
+
+<script>
+    const canv = document.getElementById("mycanvas");
+    const a = canv.getContext("2d");
+
+    a.fillStyle = "orange";
+    a.fillRect(25, 20, 150, 100);
+</script>
+
+</html>
